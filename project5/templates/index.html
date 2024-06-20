@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block style %}
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+        rel="stylesheet">
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <h3>Hello World</h3>
+    <p class="text-danger">Please insert your data</p>
+    <div class="bg-danger text-white">Danger age under 18 no entry</div>
+{% endblock %}
